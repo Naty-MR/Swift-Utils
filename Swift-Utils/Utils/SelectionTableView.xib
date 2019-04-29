@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectionTableViewController" customModule="Swift_Utils" customModuleProvider="target">
+            <connections>
+                <outlet property="applyBtn" destination="s0J-CL-yDo" id="8NI-UZ-JD7"/>
+                <outlet property="selectionTable" destination="jas-DF-oWE" id="qk6-Fg-blJ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Oor-v0-H4l"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYs-iN-Giw">
+                    <rect key="frame" x="16" y="32" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="D2p-nZ-G6X"/>
+                        <constraint firstAttribute="width" secondItem="aYs-iN-Giw" secondAttribute="height" multiplier="1:1" id="mXY-t5-Icp"/>
+                    </constraints>
+                    <color key="tintColor" red="0.001862371224" green="0.44868326190000002" blue="0.73522150519999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="x">
+                        <color key="titleColor" red="0.001862371224" green="0.44868326190000002" blue="0.73522150519999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goBack:" destination="-1" eventType="touchUpInside" id="COY-8r-b4Y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0J-CL-yDo">
+                    <rect key="frame" x="253" y="32" width="51" height="30"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="Aplicar">
+                        <color key="titleColor" red="0.001862371224" green="0.44868326190000002" blue="0.73522150519999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="applyChanges:" destination="-1" eventType="touchUpInside" id="fdw-eL-WSa"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jas-DF-oWE">
+                    <rect key="frame" x="0.0" y="63" width="320" height="442"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="s0J-CL-yDo" secondAttribute="trailing" constant="16" id="7Ej-mw-7Qe"/>
+                <constraint firstItem="s0J-CL-yDo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aYs-iN-Giw" secondAttribute="trailing" constant="8" symbolic="YES" id="AyU-ms-8TH"/>
+                <constraint firstItem="aYs-iN-Giw" firstAttribute="width" secondItem="aYs-iN-Giw" secondAttribute="height" multiplier="1:1" id="BvZ-bh-sUo"/>
+                <constraint firstItem="aYs-iN-Giw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Ca1-vA-eG8"/>
+                <constraint firstItem="jas-DF-oWE" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="fD2-Qi-oBh"/>
+                <constraint firstItem="jas-DF-oWE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hid-pc-80z"/>
+                <constraint firstItem="s0J-CL-yDo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="iGj-rC-lLj"/>
+                <constraint firstItem="jas-DF-oWE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jJE-N8-bCL"/>
+                <constraint firstItem="aYs-iN-Giw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="rjE-7O-x39"/>
+                <constraint firstItem="jas-DF-oWE" firstAttribute="top" secondItem="aYs-iN-Giw" secondAttribute="bottom" constant="16" id="tv1-RR-vkm"/>
+            </constraints>
+            <point key="canvasLocation" x="138.75" y="153.16901408450704"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="x" width="111" height="111"/>
+    </resources>
+</document>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomLoadingView" customModule="Ecogas_Cliente" customModuleProvider="target">
+            <connections>
+                <outlet property="messageLbl" destination="XBf-u3-Wdn" id="tvF-SR-VLc"/>
+                <outlet property="stackContainer" destination="Yi4-kg-E8d" id="q3L-Tn-jgO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYQ-cB-qJr">
+                    <rect key="frame" x="0.0" y="10.5" width="375" height="667"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Yi4-kg-E8d">
+                            <rect key="frame" x="24" y="24" width="327" height="619"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3G-fX-3Jc">
+                                    <rect key="frame" x="0.0" y="0.0" width="327" height="309.5"/>
+                                    <subviews>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rbJ-U6-yTG">
+                                            <rect key="frame" x="145" y="137" width="37" height="37"/>
+                                            <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </activityIndicatorView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="rbJ-U6-yTG" firstAttribute="centerY" secondItem="o3G-fX-3Jc" secondAttribute="centerY" id="BAy-Zy-hge"/>
+                                        <constraint firstItem="rbJ-U6-yTG" firstAttribute="centerX" secondItem="o3G-fX-3Jc" secondAttribute="centerX" id="GnK-RJ-9DD"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensaje" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBf-u3-Wdn">
+                                    <rect key="frame" x="0.0" y="309.5" width="327" height="309.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Yi4-kg-E8d" firstAttribute="top" secondItem="fYQ-cB-qJr" secondAttribute="top" constant="24" id="BWx-Tf-QeB"/>
+                        <constraint firstAttribute="trailing" secondItem="Yi4-kg-E8d" secondAttribute="trailing" constant="24" id="Eha-OS-xrA"/>
+                        <constraint firstItem="Yi4-kg-E8d" firstAttribute="leading" secondItem="fYQ-cB-qJr" secondAttribute="leading" constant="24" id="Jxy-4B-ymV"/>
+                        <constraint firstItem="Yi4-kg-E8d" firstAttribute="centerY" secondItem="fYQ-cB-qJr" secondAttribute="centerY" id="PJP-bk-Ww8"/>
+                        <constraint firstAttribute="bottom" secondItem="Yi4-kg-E8d" secondAttribute="bottom" constant="24" id="fTN-WW-zna"/>
+                        <constraint firstItem="Yi4-kg-E8d" firstAttribute="centerX" secondItem="fYQ-cB-qJr" secondAttribute="centerX" id="oMR-Xy-zIe"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20869006849315069" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fYQ-cB-qJr" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="3ll-G3-DNH"/>
+                <constraint firstItem="fYQ-cB-qJr" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="aqi-yN-M70"/>
+                <constraint firstItem="fYQ-cB-qJr" firstAttribute="height" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.2" id="mnD-PF-jL8"/>
+                <constraint firstItem="fYQ-cB-qJr" firstAttribute="width" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="vQI-qA-ySk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="91.5"/>
+        </view>
+    </objects>
+</document>

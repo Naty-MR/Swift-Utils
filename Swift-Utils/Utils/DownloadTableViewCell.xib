@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UITableViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DownloadTableViewCell" customModule="Matriculados" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="25"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-Bv-MCP">
+                    <rect key="frame" x="0.0" y="0.0" width="343" height="25"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xo-Qf-N8p">
+                            <rect key="frame" x="0.0" y="0.0" width="285" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqt-QH-Lko">
+                            <rect key="frame" x="289" y="0.0" width="25" height="25"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESi-wC-3p9">
+                                    <rect key="frame" x="4" y="2.5" width="17" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="ESi-wC-3p9" secondAttribute="height" multiplier="115:133" id="VaP-Vf-P6i"/>
+                                        <constraint firstAttribute="height" constant="20" id="u7u-rO-3QK"/>
+                                    </constraints>
+                                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="icon_trash"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ESi-wC-3p9" firstAttribute="centerY" secondItem="vqt-QH-Lko" secondAttribute="centerY" id="1mu-Ta-XwN"/>
+                                <constraint firstAttribute="width" secondItem="vqt-QH-Lko" secondAttribute="height" multiplier="1:1" id="Jci-kC-YDV"/>
+                                <constraint firstItem="ESi-wC-3p9" firstAttribute="centerX" secondItem="vqt-QH-Lko" secondAttribute="centerX" id="Nb5-lH-f3U"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ae9-Vc-XZo">
+                            <rect key="frame" x="318" y="0.0" width="25" height="25"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuL-Uo-e1e">
+                                    <rect key="frame" x="2.5" y="2.5" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="YRT-46-Zjp"/>
+                                        <constraint firstAttribute="width" secondItem="vuL-Uo-e1e" secondAttribute="height" multiplier="1:1" id="iIn-OA-xjd"/>
+                                    </constraints>
+                                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="icon_external"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="vuL-Uo-e1e" firstAttribute="centerX" secondItem="ae9-Vc-XZo" secondAttribute="centerX" id="QJe-lu-2dL"/>
+                                <constraint firstItem="vuL-Uo-e1e" firstAttribute="centerY" secondItem="ae9-Vc-XZo" secondAttribute="centerY" id="kzO-bS-bAg"/>
+                                <constraint firstAttribute="width" secondItem="ae9-Vc-XZo" secondAttribute="height" multiplier="1:1" id="nNs-Di-MaK"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Wd2-Bv-MCP" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="7RD-BL-mfj"/>
+                <constraint firstItem="Wd2-Bv-MCP" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="7sd-Gw-K6Q"/>
+                <constraint firstItem="Wd2-Bv-MCP" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="blq-vF-vdU"/>
+                <constraint firstItem="Wd2-Bv-MCP" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="e6Q-CW-L0n"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="deleteBtn" destination="ESi-wC-3p9" id="LTh-jT-kKa"/>
+                <outlet property="fileName" destination="0xo-Qf-N8p" id="eQV-vv-3Lp"/>
+                <outlet property="openBtn" destination="vuL-Uo-e1e" id="W1S-Gl-XRZ"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="-127.736131934033"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_external" width="249.5" height="249.5"/>
+        <image name="icon_trash" width="230.5" height="266"/>
+    </resources>
+</document>
